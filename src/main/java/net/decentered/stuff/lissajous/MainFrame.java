@@ -1,4 +1,4 @@
-package net.decentered.stuff;
+package net.decentered.stuff.lissajous;
 
 import javax.swing.*;
 import java.awt.*;
