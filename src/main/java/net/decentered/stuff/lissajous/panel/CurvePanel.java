@@ -33,9 +33,24 @@ public class CurvePanel extends JPanel implements ParameterChangedListener {
         int centerX = width / 2;
         int centerY = height / 2;
 
-        double scale = Math.min(width, height) / 2.2;
+        // axes
+        g2d.setColor(new Color(50, 130, 109));
+        float[] pattern = {1.0f, 5.0f};
+        BasicStroke dottedStroke = new BasicStroke(
+                2.0f,
+                BasicStroke.CAP_ROUND,
+                BasicStroke.JOIN_ROUND,
+                1.0f,
+                pattern,
+                0.0f
+        );
+        g2d.setStroke(dottedStroke);
+        g2d.drawLine(10, centerY, width-10, centerY);
+        g2d.drawLine(centerX, 10, centerX, height-10);
 
+        // figure
         Path2D.Double path = new Path2D.Double();
+        double scale = Math.min(width, height) / 2.2;
 
         for (int i = 0; i <= DATA_POINTS; i++) {
 
