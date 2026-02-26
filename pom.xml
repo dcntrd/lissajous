@@ -18,7 +18,7 @@
         <repository>
             <id>github</id>       
             <name>Releases</name>           
-            <url>https://maven.pkg.github.com/org1/repo1</url> 
+            <url>https://maven.pkg.github.com/dcntrd/lissajous</url> 
         </repository>
     </distributionManagement>
          
